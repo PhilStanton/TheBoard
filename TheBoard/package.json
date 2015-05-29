@@ -8,6 +8,8 @@
     "email": "p.k.stanton@gmail.com"
   },
   "dependencies": {
+    "ejs": "^2.3.1",
+    "ejs-locals": "^1.0.2",
     "express": "^4.12.4",
     "underscore": "^1.8.3"
   }
