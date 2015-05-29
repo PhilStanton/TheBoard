@@ -6,5 +6,9 @@
   "author": {
     "name": "Phil.Stanton",
     "email": "p.k.stanton@gmail.com"
+  },
+  "dependencies": {
+    "express": "^4.12.4",
+    "underscore": "^1.8.3"
   }
 }
