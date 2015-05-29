@@ -1,0 +1,10 @@
+{
+  "name": "TheBoard",
+  "version": "0.1.0",
+  "description": "A message board",
+  "main": "server.js",
+  "author": {
+    "name": "Phil.Stanton",
+    "email": "p.k.stanton@gmail.com"
+  }
+}
