@@ -8,6 +8,9 @@ var ejsEngine = require("ejs-locals");
 app.engine("ejs", ejsEngine);   // supports master pages
 app.set("view engine", "ejs");  // ejs view engine
 
+// setup view engine
+app.set("view engine", "jade");
+
 app.get("/", function(req, res) {
     //res.send("<html><body><h1>Express</h1></body></html>");
     res.render("ejs/index", { title: "Express + EJS" });
