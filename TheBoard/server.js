@@ -2,8 +2,12 @@
 var express = require("express");
 var app = express();
 
+// setup view engine
+app.set("view engine", "jade");
+
 app.get("/", function(req, res) {
-    res.send("<html><body><h1>Express</h1></body></html>");
+    //res.send("<html><body><h1>Express</h1></body></html>");
+    res.render("jade/index", { title: "Express + Jade" });
 });
 
 app.get("/api/users", function (req, res) {
