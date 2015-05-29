@@ -157,3 +157,6 @@ $RECYCLE.BIN/
 
 # NTVS files
 .ntvs_*
+
+# Ignore Node Modules
+node_modules/
