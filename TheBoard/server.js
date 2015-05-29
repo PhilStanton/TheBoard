@@ -1,19 +1,17 @@
 ﻿var http = require("http");
 var express = require("express");
 var app = express();
-var ejsEngine = require("ejs-locals");
+//var ejsEngine = require("ejs-locals");
 
 // setup view engine
 //app.set("view engine", "jade");
-app.engine("ejs", ejsEngine);   // supports master pages
-app.set("view engine", "ejs");  // ejs view engine
-
-// setup view engine
-app.set("view engine", "jade");
+//app.engine("ejs", ejsEngine);   // supports master pages
+//app.set("view engine", "ejs");  // ejs view engine
+app.set("view engine", "vash");   // vash view engine  
 
 app.get("/", function(req, res) {
     //res.send("<html><body><h1>Express</h1></body></html>");
-    res.render("ejs/index", { title: "Express + EJS" });
+    res.render("index", { title: "Express + Vash" });
 });
 
 app.get("/api/users", function (req, res) {
